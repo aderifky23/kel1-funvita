@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.navbar-hero {
+    position: absolute; /* Absolute positioning to overlay on hero */
+    top: 20px; /* Position from the top */
+    width: 100%;
+    z-index: 2000; /* Make sure it's on top of the hero section */
+    display: flex; /* Flexbox for logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for navbar */
+}
+
+.navbar-hero .logo {
+    margin-right: auto; /* Keep logo on the left */
+}
+
+.navbar-hero .logo img {
+    height: 70px; /* Adjust logo size */
+}
+
+.navbar-hero ul {
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    list-style: none;
+}
+
+.navbar-hero ul li {
+    margin: 0 20px; /* Adjust margin for spacing */
+}
+
+.navbar-hero ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.navbar-hero ul li a:hover {
+    color: #FF4500; /* Change color on hover */
+}
+
+.navbar-sticky {
+    position: fixed; /* Fixed position */
+    top: 0; /* Position at the top */
+    width: 100%;
+    background: linear-gradient(90deg, #4B0082, #FF4500); /* Gradient */
+    z-index: 1000; /* Above other content */
+    transition: top 0.3s; /* Transition for reveal */
+    display: flex; /* Flexbox for logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for navbar */
+}
+
+.navbar-sticky .logo {
+    margin-right: auto; /* Keep logo on the left */
+}
+
+.navbar-sticky .logo img {
+    height: 70px; /* Adjust logo size */
+}
+
+.navbar-sticky ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    list-style: none;
+}
+
+.navbar-sticky ul li {
+    margin-left: 20px; /* Spacing for items */
+}
+
+.navbar-sticky ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.navbar-sticky ul li a:hover {
+    color: #FF4500; /* Change color on hover */
+}
+
+
+.hero-section {
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute; /* Cover full area */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+    padding: 20px; /* Padding for inner content */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.slider {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Full width */
+    position: relative; /* Relative positioning */
+}
+
+.sliding-text {
+    font-size: 150%; /* Font size */
+    margin: 0 20px;
+    transition: opacity 0.5s ease; /* Fade effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 1; /* Initial opacity */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+}
+
+.arrow-left, .arrow-right {
+    background-color: transparent;
+    border: none;
+    color: #fff; /* White color for arrows */
+    font-size: 2rem; /* Arrow size */
+    cursor: pointer;
+    padding: 10px; /* Button padding */
+}
+
+.company-description {
+    font-size: 1.2rem; /* Font size */
+    margin-top: 20px;
+    color: #fff; /* White color */
+    transition: opacity 0.5s ease; /* Fade effect */
+    text-align: center; /* Center text */
+    font-weight: bold; /* Bold text */
+}
+
+#visi-misi, #portfolio, #business-achievements, #tenant, #kontak {
+    padding: 50px;
+    text-align: center; /* Center text */
+    background-color: #f7f7f7; /* Section background */
+    margin: 20px 0; /* Vertical margin */
+}
+
+#visi-misi h2, #portfolio h2, #business-achievements h2, #tenant h2, #kontak h2 {
+    font-size: 2rem; /* Header font size */
+    margin-bottom: 20px; /* Bottom margin */
+}
